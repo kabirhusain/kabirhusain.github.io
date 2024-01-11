@@ -2,25 +2,22 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: theoretical physics, molecular biology, and experimental evolution
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: kabir_window.jpg
+  address: >
+    <p>Husain lab</p>
+    <p>Department of Physics and Astronomy</p>
+    <p>University College London</p>
 
-news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
+news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
+I am a Lecturer of Biophysics in the Department of Physics and Astronomy at University College London. My research interests are in the physical basis of fidelity, specificity, and adaptability in biology. I am particularly interested in how networks of molecular interactions permit and define the evolutionary fate of an adapting system.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Problems span timescales from the physiological to the evolutionary, though often at the cellular or molecular level. I use techniques from physics (statistical physics, information theory, evolutionary dynamics) as well as experimental biology approaches (molecular biology, yeast genetics, laboratory evolution).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Prior to this, I was a Yen Biophysics Fellow in the Department of Physics at the University of Chicago, in the group of Arvind Murugan. From 2018 to 2021 I was supported by a fellowship from the James S. McDonnell Foundation. I did my PhD with Madan Rao and Jitu Mayor at the NCBS, Bangalore, where I worked on the organisation and transfer of information at the cell surface.

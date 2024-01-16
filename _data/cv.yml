@@ -16,10 +16,11 @@
       year: 2018 - 2023
       description:
         - title: Theory
-        - Circadian clocks.
-        - Evolution in time-varying environments.
-        - Molecular biophysics and mutations
-        - The evolution of kinetic proofreading 
+          contents:
+            - Circadian clocks.
+            - Evolution in time-varying environments.
+            - Molecular biophysics and mutations
+            - The evolution of kinetic proofreading 
         - title: Experiments
           contents:
             - DNA barcoding + lineage tracing + Luria-Delbruck

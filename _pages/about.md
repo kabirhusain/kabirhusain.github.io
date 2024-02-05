@@ -6,7 +6,7 @@ subtitle: theoretical physics, molecular biology, and experimental evolution
 
 profile:
   align: right
-  image: kabir_window.jpg
+  image: Kabir-lakeside-800px.jpg
   address: >
     <p>Husain lab</p>
     <p>Department of Physics and Astronomy</p>

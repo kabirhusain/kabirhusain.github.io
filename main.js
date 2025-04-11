@@ -31,11 +31,28 @@ function setupHeaderImages() {
         return;
     }
     
+    // Clear any existing slides
+    headerContainer.innerHTML = '';
+    
     // Create slides for each image
     images.forEach((image, index) => {
         const slide = document.createElement('div');
         slide.className = `header-slide ${index === 0 ? 'active' : ''}`;
-        slide.style.backgroundImage = `url('${image.path}')`;
+        
+        // Add error handling for image loading
+        const img = new Image();
+        img.onload = function() {
+            // Image loaded successfully
+            slide.style.backgroundImage = `url('${image.path}')`;
+        };
+        img.onerror = function() {
+            console.error(`Failed to load image: ${image.path}`);
+            // Use a fallback color or placeholder
+            slide.style.backgroundColor = '#f0f0f0';
+            slide.innerHTML = `<div style="padding: 20px; text-align: center;">Image not found: ${image.path}</div>`;
+        };
+        img.src = image.path;
+        
         slide.setAttribute('aria-label', image.altText || `Header image ${index + 1}`);
         headerContainer.appendChild(slide);
     });
@@ -56,9 +73,11 @@ function setupHeaderImages() {
         let currentSlide = 0;
         setInterval(() => {
             const slides = document.querySelectorAll('.header-slide');
-            slides[currentSlide].classList.remove('active');
-            currentSlide = (currentSlide + 1) % slides.length;
-            slides[currentSlide].classList.add('active');
+            if (slides.length > 1) {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }
         }, interval);
     }
 }

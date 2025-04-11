@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabir Husain</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Header image container -->
+        <div id="header-image" class="header-image"></div>
+        
+        <h1>Kabir Husain</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#teaching">Teaching</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="content-section"></section>
+        <section id="research" class="content-section"></section>
+        <section id="publications" class="content-section"></section>
+        <section id="teaching" class="content-section"></section>
+        <section id="contact" class="content-section"></section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Kabir Husain</p>
+    </footer>
+
+    <!-- Loading indicator -->
+    <div id="loading">Loading content...</div>
+
+    <!-- Configure content source -->
+    <script src="config.js"></script>
+    <!-- Markdown parser for text file option -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Main script to load content -->
+    <script src="main.js"></script>
+</body>
+</html>

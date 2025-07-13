@@ -1,4 +1,4 @@
-## Teaching
+<!-- ## Teaching
 
 ### Current Courses
 
@@ -13,4 +13,4 @@
 ### Past Courses
 
 - **Course Title 3** (Course Code)  
-  Institution, Semester/Year
+  Institution, Semester/Year -->

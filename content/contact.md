@@ -1,15 +1,13 @@
 ## Contact
 
-Email: your.email@example.com
+Email: kabir.husain *at* ucl.ac.uk
 
-Office: Building Name, Room Number  
-Institution/University  
-Address  
-City, State, Zip Code
+Office: Physics Building, B22  
+University College London
+Gower Street
+London, UK WC1E 6BT
 
 ### Social Media / Professional Profiles
 
-- [Google Scholar](#)
-- [LinkedIn](#)
-- [Twitter](#)
-- [GitHub](#)
+- [Google Scholar](https://scholar.google.com/citations?user=8MdAEEsAAAAJ&hl=en)
+- [Bluesky](https://bsky.app/profile/kabirhusain.bsky.social)

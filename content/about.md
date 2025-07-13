@@ -1,6 +1,6 @@
 ## About Me
 
-I am a Lecturer in the Department of Physics and Astronomy at University College London. I work on problems in statistical physics and biological evolution.
+I am a Lecturer in the Department of Physics and Astronomy at University College London. Our group works on problems in statistical physics, biological evolution, and topics that lie in between.
 
 This work uses tools from theory (statistical physics, information theory, evolutionary dynamics) as well as experimental biology approaches (molecular biology, yeast genetics, laboratory evolution).
 

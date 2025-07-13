@@ -19,8 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function setupHeaderImages() {
     const headerContainer = document.getElementById('header-image');
-    const images = config.headerImage.images || [];
+    let images = config.headerImage.images || [];
     
+    // Limit to only two images
+    images = images.slice(0, 2);
+
     // If no images or only one image, use the simple approach
     if (!images.length || !Array.isArray(images)) {
         // Fallback to original single image behavior

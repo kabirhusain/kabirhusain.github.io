@@ -48,3 +48,6 @@ This is a simplified personal academic website that can be updated in two ways:
 - Edit `styles.css` to customize the appearance
 - Modify `index.html` to change the page structure
 - Update `config.js` to switch between content sources
+
+<!-- Push test: 2026-08-09 -->
+

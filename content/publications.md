@@ -5,7 +5,7 @@ A selection below. [Complete list at Google Scholar](https://scholar.google.com/
 ### Select Preprints
 
 1. **A DNA-barcoded Luria-Delbrück assay resolves mechanisms of adaptation**  
-   K Husain†, L Flagg, D Pincus, A Murugan  
+   K Husain\*†, L Flagg\*, D Pincus, A Murugan  
    [*bioRxiv*, 2026](https://doi.org/10.64898/2026.08.03.742544)
 
 2. **The fitness landscape of overlapping genes**  

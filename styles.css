@@ -3,6 +3,21 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+}
+
+/* Inherit Inter everywhere, including form controls Water.css styles separately */
+button, input, select, textarea {
+    font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+strong, b {
+    font-weight: 700;
 }
 
 header {
@@ -19,24 +34,6 @@ header {
     border-radius: 4px;
     position: relative;
     overflow: hidden;
-}
-
-.header-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 1;
-}
-
-.header-slide.active {
-    opacity: 1;
-    z-index: 2;
 }
 
 nav ul {

@@ -9,20 +9,18 @@ This is a simplified personal academic website that can be updated in two ways:
 
 1. Navigate to the `/content` directory
 2. Edit the markdown files for the section you want to update:
-   - `about.md`
    - `research.md`
+   - `group.md`
    - `publications.md`
-   - `teaching.md`
    - `contact.md`
 3. Save the files and deploy the site
 
 ## Google Sheet-based Updates
 
 1. Create a Google Sheet with the following tabs/sheets:
-   - `about`
    - `research`
+   - `group`
    - `publications`
-   - `teaching`
    - `contact`
 2. For general tabs, use columns:
    - Column A: Type (title, subtitle, paragraph, link)
@@ -48,6 +46,4 @@ This is a simplified personal academic website that can be updated in two ways:
 - Edit `styles.css` to customize the appearance
 - Modify `index.html` to change the page structure
 - Update `config.js` to switch between content sources
-
-<!-- Push test: 2026-08-09 -->
 

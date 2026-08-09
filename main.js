@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Apply header image if enabled
     if (config.headerImage && config.headerImage.enabled) {
-        setupHeaderImages();
+        setupHeaderImage();
     } else {
         // Hide the header image container if not enabled
         const headerImage = document.getElementById('header-image');
@@ -17,72 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
     loadContent();
 });
 
-function setupHeaderImages() {
+function setupHeaderImage() {
     const headerContainer = document.getElementById('header-image');
-    let images = config.headerImage.images || [];
-    
-    // Limit to only two images
-    images = images.slice(0, 2);
+    const imagePath = config.headerImage.path || 'images/header1.jpg';
+    const altText = config.headerImage.altText || 'Header image';
 
-    // If no images or only one image, use the simple approach
-    if (!images.length || !Array.isArray(images)) {
-        // Fallback to original single image behavior
-        const imagePath = config.headerImage.path || 'images/header.jpg';
-        const altText = config.headerImage.altText || 'Header image';
+    const img = new Image();
+    img.onload = function() {
         headerContainer.style.backgroundImage = `url('${imagePath}')`;
-        headerContainer.setAttribute('aria-label', altText);
-        return;
-    }
-    
-    // Clear any existing slides
-    headerContainer.innerHTML = '';
-    
-    // Create slides for each image
-    images.forEach((image, index) => {
-        const slide = document.createElement('div');
-        slide.className = `header-slide ${index === 0 ? 'active' : ''}`;
-        
-        // Add error handling for image loading
-        const img = new Image();
-        img.onload = function() {
-            // Image loaded successfully
-            slide.style.backgroundImage = `url('${image.path}')`;
-        };
-        img.onerror = function() {
-            console.error(`Failed to load image: ${image.path}`);
-            // Use a fallback color or placeholder
-            slide.style.backgroundColor = '#f0f0f0';
-            slide.innerHTML = `<div style="padding: 20px; text-align: center;">Image not found: ${image.path}</div>`;
-        };
-        img.src = image.path;
-        
-        slide.setAttribute('aria-label', image.altText || `Header image ${index + 1}`);
-        headerContainer.appendChild(slide);
-    });
-    
-    // Set up animation if enabled and if more than one image
-    if (config.headerImage.animation && config.headerImage.animation.enabled && images.length > 1) {
-        // Get animation settings or use defaults
-        const interval = config.headerImage.animation.interval || 5000;
-        const transitionSpeed = config.headerImage.animation.transitionSpeed || 1000;
-        
-        // Set the transition speed
-        const slides = document.querySelectorAll('.header-slide');
-        slides.forEach(slide => {
-            slide.style.transition = `opacity ${transitionSpeed}ms ease-in-out`;
-        });
-        
-        // Start the animation
-        let currentSlide = 0;
-        setInterval(() => {
-            const slides = document.querySelectorAll('.header-slide');
-            if (slides.length > 1) {
-                slides[currentSlide].classList.remove('active');
-                currentSlide = (currentSlide + 1) % slides.length;
-                slides[currentSlide].classList.add('active');
-            }
-        }, interval);
-    }
+    };
+    img.onerror = function() {
+        console.error(`Failed to load image: ${imagePath}`);
+        headerContainer.style.backgroundColor = '#f0f0f0';
+    };
+    img.src = imagePath;
+
+    headerContainer.setAttribute('aria-label', altText);
 }
 
 async function loadContent() {
@@ -125,7 +75,7 @@ async function loadContentFromFiles() {
 
 async function loadContentFromGoogleSheet() {
     const sheetId = config.googleSheet.sheetId;
-    const sections = ['about', 'research', 'publications', 'teaching', 'contact'];
+    const sections = ['research', 'group', 'publications', 'contact'];
     
     for (const section of sections) {
         try {

@@ -9,7 +9,7 @@ A selection below. [Complete list at Google Scholar](https://scholar.google.com/
    [*bioRxiv*, 2026](https://doi.org/10.64898/2026.08.03.742544)
 
 2. **The fitness landscape of overlapping genes**  
-   O Kirsch, N Wood, S A Redford, K Husain†  
+   O Kirsch\*, N Wood\*, S A Redford, K Husain†  
    [*arXiv*, 2026](https://arxiv.org/abs/2604.00602)
 
 3. **Conditioning as a route to stereotyped behavior in growing populations**  

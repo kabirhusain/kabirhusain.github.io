@@ -2,7 +2,7 @@
 
 A selection below. [Complete list at Google Scholar](https://scholar.google.com/citations?user=8MdAEEsAAAAJ&hl=en).
 
-### Select Preprints
+### Recent Preprints
 
 1. **A DNA-barcoded Luria-Delbrück assay resolves mechanisms of adaptation**  
    K Husain\*†, L Flagg\*, D Pincus, A Murugan  
@@ -20,7 +20,7 @@ A selection below. [Complete list at Google Scholar](https://scholar.google.com/
    K Husain\*, V Sachdeva\*, R Ravasio, M Peruzzo, W Liu, B H Good, A Murugan  
    [*bioRxiv*, 2024](https://doi.org/10.1101/2024.10.14.618309)
 
-### Select Publications
+### Recent Publications
 
 1. **Evolution of error correction through a need for speed**  
    R Ravasio\*, K Husain\*, C G Evans, R Phillips, M Ribezzi-Crivellari, J W Szostak, A Murugan  
